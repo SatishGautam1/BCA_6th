@@ -79,3 +79,31 @@
 	
 	- RESTful architecture use HTTP request to perform CRUD (Read, Create, Delete, Update) operation on resources
 	- RESTful architecture is based on set of principle constraints that allows for scalable, stateless communication between client and server.
+- Wrappers has always played an important role in extending existing components.
+- If application A managed data that was needed by application B one approach is to develop a wrapper specific for B so that it could access A's data.
+- Facilitating a reduction of numbers of wrappers typically done through middle ware.
+- One way of doing this is implementing a show called broker which is logically a synchronized component that handles all the access between different applications.
+- In case of message broker application simply send the request to the broker containing information on what they need.
+- The broker having knowledge of all relevant application contacts the appropriate application possibly combined and transform the response and return the result to initiate application.
+- Broker offers single interface to each application.
+
+![[Pasted image 20240702092238.png]]
+
+#### b. Interceptors 
+- Software construct that will beat the usual flow of control and allow other code to execute.
+- It is primary means of adapting middleware to specific need of application.
+- Plays important role in making middleware open.
+- To make interceptor generic it need substainted implementation effort.
+- Improves management of the software and distributed system as a whole.
+- Consider microphone as supported in many object based distributed system.
+- Let object A call a method that belong to object B. The remote object oriented invocation a carried out in these steps:-
+- Step 1: A offer can local interface that is exactly same as interface offered by is A call the method available in that interface.
+- Step 2: The call by A is transformed into generic object invocation which is made possible through generic object invocation. It offers the middleware at a machine where A resides.
+- Step 3: Finally the generic object invocation is transformed into massage that sent through the transport level network interface as offered by A's local OS.
+
+Assignment 2
+System Architecture
+1. Centralized organization (Intro, Application, Advantages, Disadvantages)
+2. Client Server Architecture (Intro, Application, Advantages, Disadvantages) (optional)
+3. Peer to peer Architecture (Intro, Application, Advantages, Disadvantages) (optional)
+4. Decentralized organization (Intro, Application, Advantages, Disadvantages)
